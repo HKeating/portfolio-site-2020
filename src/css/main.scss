@@ -2,7 +2,8 @@
 @import "tailwindcss/base";
 body {
   font-family: Oxygen-Regular, Helvetica, Arial, sans-serif;
-  color: #2c3e50;
+  background: rgb(249,249,249);
+  color: rgb(48,48,58);
 }
 @import "tailwindcss/components";
 /* purgecss end ignore */
