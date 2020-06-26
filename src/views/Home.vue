@@ -3,13 +3,17 @@
     class="container mx-auto grid gap-4 lg:grid-cols-12 sm:grid-cols-2 md:grid-cols-4 p-2 xl:p-4"
   >
     <div
-      class="lg:col-span-3 md:col-span-2 col-span-2 border-b-2 border-r-2 border-black border-opacity-75 p-2"
+      :class="elementBackgroundClasses[0]"
+      @click="randomiseBackgroundClassByIndex(0)"
+      class="cursor-pointer lg:col-span-3 md:col-span-2 col-span-2 border-b-2 border-r-2 border-black border-opacity-75 p-2 transition-background duration-300"
     >
       <h1 class="text-3xl">Horace Keating</h1>
       <h2 class="text-xl">Web Developer</h2>
     </div>
     <div
-      class="lg:col-span-2 row-span-2 lg:col-start-11 md:col-start-4 md:col-span-1 col-start-1 border-l-2 border-t-2 border-black border-opacity-75 p-2"
+      :class="elementBackgroundClasses[1]"
+      @click="randomiseBackgroundClassByIndex(1)"
+      class="cursor-pointer lg:col-span-2 row-span-2 lg:col-start-11 md:col-start-4 md:col-span-1 col-start-1 border-l-2 border-t-2 border-black border-opacity-75 p-2 transition-background duration-300"
     >
       <img
         class="object-cover w-full h-full"
@@ -18,7 +22,9 @@
       />
     </div>
     <div
-      class="lg:col-start-3 lg:col-span-6 md:col-span-4 md:col-start-1 border-l-2 border-b-2 border-black border-opacity-75 p-2 transition-background duration-300 hover:bg-yellow-50"
+      :class="elementBackgroundClasses[2]"
+      @click="randomiseBackgroundClassByIndex(2)"
+      class="cursor-pointer lg:col-start-3 lg:col-span-6 md:col-span-4 md:col-start-1 border-l-2 border-b-2 border-black border-opacity-75 p-2 transition-background duration-300"
     >
       <p class="text-base">
         Hi, I am a web developer specialising in JavaScript and Vue.js. Lorem
@@ -44,7 +50,9 @@
       </a>
     </div>
     <div
-      class="lg:col-start-6 lg:col-span-4 lg:row-start-3 md:row-span-2 md:row-start-4 md:col-span-1 border-r-2 border-t-2 border-black border-opacity-75 p-2 transition-background duration-300 hover:bg-red-50"
+      :class="elementBackgroundClasses[4]"
+      @click="randomiseBackgroundClassByIndex(4)"
+      class="cursor-pointer lg:col-start-6 lg:col-span-4 lg:row-start-3 md:row-span-2 md:row-start-4 md:col-span-1 border-r-2 border-t-2 border-black border-opacity-75 p-2 transition-background duration-300"
     >
       <p class="text-base">
         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio sit
@@ -68,7 +76,9 @@
       </a>
     </div>
     <div
-      class="col-start-1 col-span-2 lg:row-start-5 lg:col-start-3 lg:col-span-4 lg:row-span-1 border-l-2 border-t-2 border-black border-opacity-75 p-2 lg:border-r-2 lg:border-b-2 lg:border-t-0 lg:border-l-0 transition-background duration-300 hover:bg-blue-50"
+      :class="elementBackgroundClasses[6]"
+      @click="randomiseBackgroundClassByIndex(6)"
+      class="cursor-pointer col-start-1 col-span-2 lg:row-start-5 lg:col-start-3 lg:col-span-4 lg:row-span-1 border-l-2 border-t-2 border-black border-opacity-75 p-2 lg:border-r-2 lg:border-b-2 lg:border-t-0 lg:border-l-0 transition-background duration-300"
     >
       <p class="text-base">
         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio sit
@@ -82,5 +92,31 @@
 <script>
 export default {
   name: 'Home',
+  data() {
+    return {
+      elementBackgroundClasses: Array(7),
+      backgroundClasses: [
+        '',
+        'bg-blue-25',
+        'bg-blue-50',
+        'bg-blue-75',
+        'bg-yellow-25',
+        'bg-yellow-50',
+        'bg-yellow-75',
+        'bg-red-25',
+        'bg-red-50',
+        'bg-red-75',
+      ],
+    };
+  },
+  methods: {
+    randomiseBackgroundClassByIndex(index) {
+      const availableClasses = this.backgroundClasses.filter(
+        bgClass => bgClass !== this.elementBackgroundClasses[index]
+      );
+      const rand = Math.floor(Math.random() * availableClasses.length);
+      this.elementBackgroundClasses.splice(index, 1, availableClasses[rand]);
+    },
+  },
 };
 </script>
