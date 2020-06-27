@@ -1,5 +1,5 @@
 <template>
-  <router-link class="text-blue-100 hover:underline" :to="{ name: routeName }">
+  <router-link :to="{ name: routeName }">
     <slot />
   </router-link>
 </template>
