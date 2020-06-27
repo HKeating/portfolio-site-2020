@@ -69,12 +69,11 @@
     >
       <p class="text-base">
         In 2018, alongside two colleagues, I built
-        <link-internal :routeName="'BTAB'"
-          >Britain, Take A Bow</link-internal
-        >, a generative digital art piece responding to the national debate
-        about Brexit. It allows users to upload video clips, which are then
-        combined with a database of audio samples and a typographic layer, to
-        create a unique film for each viewing.
+        <link-internal :routeName="'BTAB'">Britain, Take A Bow</link-internal>,
+        a generative digital art piece responding to the national debate about
+        Brexit. It allows users to upload video clips, which are then combined
+        with a database of audio samples and a typographic layer, to create a
+        unique film for each viewing.
       </p>
     </div>
     <div

@@ -1,5 +1,12 @@
 <template>
-  <div id="app" :class="{ 'theme-dark': $route.name === 'BTAB', 'theme-light': $route.name !== 'BTAB' }" class="min-h-screen flex flex-col transition duration-300">
+  <div
+    id="app"
+    :class="{
+      'theme-dark': $route.name === 'BTAB',
+      'theme-light': $route.name !== 'BTAB',
+    }"
+    class="min-h-screen flex flex-col transition duration-300"
+  >
     <!-- <div id="nav">
       <router-link to="/">Home</router-link> |
       <router-link to="/about">About</router-link>
@@ -34,12 +41,12 @@ export default {
 <style lang="postcss">
 #app {
   font-family: Oxygen-Regular, Helvetica, Arial, sans-serif;
-  background: rgb(249,249,249);
-  color: rgb(48,48,58);
+  background: rgb(249, 249, 249);
+  color: rgb(48, 48, 58);
 }
 #app.theme-dark {
-  background: rgb(48,48,58);
-  color: rgb(249,249,249);
+  background: rgb(48, 48, 58);
+  color: rgb(249, 249, 249);
 }
 a:hover {
   @apply underline;
