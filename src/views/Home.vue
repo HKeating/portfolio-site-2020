@@ -27,11 +27,22 @@
       class="cursor-pointer lg:col-start-3 lg:col-span-6 md:col-span-4 md:col-start-1 border-l-2 border-b-2 border-black border-opacity-75 p-2 transition-background duration-300"
     >
       <p class="text-base">
-        Hi, I am a web developer specialising in JavaScript and Vue.js. Lorem
-        ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate, modi id.
-        Perferendis, optio voluptatum? Itaque illum necessitatibus est, atque
-        praesentium dolore eius facilis pariatur sit velit officia eligendi
-        voluptas nemo?
+        Hi, I am a web developer specialising in JavaScript and
+        <link-external :linkUrl="'https://vuejs.org/'">Vue.js</link-external>.
+        Since 2017 I have worked for a London-based
+        <link-external :linkUrl="'https://tuimedia.com'">
+          digital agency </link-external
+        >. In that time I have built
+        <link-external
+          :LinkUrl="
+            'https://www.paconsulting.com/insights/2018/leadership-essentials/'
+          "
+          >learning platforms</link-external
+        >, websites, native apps, and
+        <link-external :linkUrl="'https://pulsevisual.com/'"
+          >SaaS systems</link-external
+        >
+        for a range of multinational clients.
       </p>
     </div>
     <div
@@ -90,11 +101,13 @@
 </template>
 
 <script>
+import LinkExternal from '@/components/LinkExternal';
+
 export default {
   name: 'Home',
   data() {
     return {
-      elementBackgroundClasses: Array(7),
+      elementBackgroundClasses: Array(7).fill(''),
       backgroundClasses: [
         '',
         'bg-blue-25',
@@ -117,6 +130,9 @@ export default {
       const rand = Math.floor(Math.random() * availableClasses.length);
       this.elementBackgroundClasses.splice(index, 1, availableClasses[rand]);
     },
+  },
+  components: {
+    LinkExternal,
   },
 };
 </script>
