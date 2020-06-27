@@ -68,9 +68,9 @@
       class="cursor-pointer lg:col-start-6 lg:col-span-4 lg:row-start-3 md:row-span-2 md:row-start-4 md:col-span-1 border-r-2 border-t-2 border-black border-opacity-75 p-2 transition-background duration-300"
     >
       <p class="text-base">
-        In 2018, alongside two colleages, I built
-        <link-external :linkUrl="'https://www.britaintakeabow.org/'"
-          >Britain, take a bow</link-external
+        In 2018, alongside two colleagues, I built
+        <link-internal :routeName="'BTAB'"
+          >Britain, take a bow</link-internal
         >, a generative digital art piece responding to the national debate
         about Brexit. It allows users to upload video clips, which are then
         combined with a database of audio samples and a typographic layer, to
@@ -119,6 +119,7 @@
 
 <script>
 import LinkExternal from '@/components/LinkExternal';
+import LinkInternal from '@/components/LinkInternal';
 
 export default {
   name: 'Home',
@@ -156,6 +157,7 @@ export default {
   },
   components: {
     LinkExternal,
+    LinkInternal,
   },
 };
 </script>
