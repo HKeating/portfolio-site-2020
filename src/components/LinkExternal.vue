@@ -20,3 +20,12 @@ export default {
   },
 };
 </script>
+
+<style lang="postcss">
+.bg-red-75 > p > a,
+.bg-blue-75 > p > a,
+.bg-red-50 > p > a,
+.bg-blue-50 > p > a {
+  @apply text-yellow-100;
+}
+</style>
