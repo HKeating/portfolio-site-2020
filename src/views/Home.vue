@@ -31,7 +31,7 @@
         <link-external :linkUrl="'https://vuejs.org/'">Vue.js</link-external>.
         Since 2017 I have worked for a London-based
         <link-external :linkUrl="'https://tuimedia.com'">
-          digital agency </link-external
+          digital agency</link-external
         >. In that time I have built
         <link-external
           :LinkUrl="
