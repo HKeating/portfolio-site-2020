@@ -57,7 +57,7 @@
       >
         <img
           class="object-cover w-full h-full"
-          src="@/assets/images/btab-1.png"
+          src="@/assets/images/btab-2.png"
           alt="Britain, take a bow"
         />
       </a>
@@ -70,7 +70,7 @@
       <p class="text-base">
         In 2018, alongside two colleagues, I built
         <link-internal :routeName="'BTAB'"
-          >Britain, take a bow</link-internal
+          >Britain, Take A Bow</link-internal
         >, a generative digital art piece responding to the national debate
         about Brexit. It allows users to upload video clips, which are then
         combined with a database of audio samples and a typographic layer, to
