@@ -12,12 +12,12 @@ const routes = [
   },
   {
     path: '/btab',
-    name: 'Britain Take a Bow',
+    name: 'BTAB',
     component: () => import(/* webpackChunkName: "btab" */ '../views/BTAB.vue'),
   },
   {
     path: '/general-assembly',
-    name: 'General Assembly',
+    name: 'GA',
     component: () => import(/* webpackChunkName: "ga" */ '../views/GA.vue'),
   },
   {
