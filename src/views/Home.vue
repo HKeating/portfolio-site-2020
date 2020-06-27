@@ -29,12 +29,13 @@
       <p class="text-base">
         Hi, I am a web developer specialising in JavaScript and
         <link-external :linkUrl="'https://vuejs.org/'">Vue.js</link-external>.
-        Since 2017 I have worked for a London-based
+        For the past {{ yearsInCurrentRole }} years, I have worked for a
+        London-based
         <link-external :linkUrl="'https://tuimedia.com'">
           digital agency</link-external
         >. In that time I have built
         <link-external
-          :LinkUrl="
+          :linkUrl="
             'https://www.paconsulting.com/insights/2018/leadership-essentials/'
           "
           >learning platforms</link-external
@@ -42,7 +43,8 @@
         <link-external :linkUrl="'https://pulsevisual.com/'"
           >SaaS systems</link-external
         >
-        for a range of multinational clients.
+        for multinational clients, and developed expertise in a wide range of
+        web technologies.
       </p>
     </div>
     <div
@@ -66,9 +68,13 @@
       class="cursor-pointer lg:col-start-6 lg:col-span-4 lg:row-start-3 md:row-span-2 md:row-start-4 md:col-span-1 border-r-2 border-t-2 border-black border-opacity-75 p-2 transition-background duration-300"
     >
       <p class="text-base">
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio sit
-        saepe esse blanditiis laborum ipsam numquam, accusamus ea beatae unde
-        sed nihil non natus, deleniti odio ullam aliquam tenetur veritatis.
+        In 2018, alongside two colleages, I built
+        <link-external :linkUrl="'https://www.britaintakeabow.org/'"
+          >Britain, take a bow</link-external
+        >, a generative digital art piece responding to the national debate
+        about Brexit. It allows users to upload video clips, which are then
+        combined with a database of audio samples and a typographic layer, to
+        create a unique film for each viewing.
       </p>
     </div>
     <div
@@ -92,9 +98,20 @@
       class="cursor-pointer col-start-1 col-span-2 lg:row-start-5 lg:col-start-3 lg:col-span-4 lg:row-span-1 border-l-2 border-t-2 border-black border-opacity-75 p-2 lg:border-r-2 lg:border-b-2 lg:border-t-0 lg:border-l-0 transition-background duration-300"
     >
       <p class="text-base">
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio sit
-        saepe esse blanditiis laborum ipsam numquam, accusamus ea beatae unde
-        sed nihil non natus, deleniti odio ullam aliquam tenetur veritatis.
+        My fascination with technology, and the transformative effect of the
+        internet on communication, media and the arts drove me to complete the
+        Web Development Immersive course at
+        <link-external :linkUrl="'https://generalassemb.ly/'"
+          >General Assembly</link-external
+        >
+        after completing my degree in German.
+      </p>
+      <p class="text-base">
+        There I learned the fundamentals of software development, and after two
+        weeks built
+        <link-external :linkUrl="'https://flappy-sausage.herokuapp.com'"
+          >Flappy Sausage</link-external
+        >, a game similar to the popular Flappy Bird.
       </p>
     </div>
   </div>
@@ -129,6 +146,12 @@ export default {
       );
       const rand = Math.floor(Math.random() * availableClasses.length);
       this.elementBackgroundClasses.splice(index, 1, availableClasses[rand]);
+    },
+  },
+  computed: {
+    yearsInCurrentRole() {
+      const joinedTui = 2017;
+      return new Date().getFullYear() - joinedTui;
     },
   },
   components: {
