@@ -11,7 +11,7 @@
     </transition>
     <footer class="container mx-auto p-2 xl:p-4">
       <div class="border-t-2 border-r-2 p-2">
-        <p>&copy; Horace Keating 2020</p>
+        <p class="text-right">Horace Keating {{ currentYear }}</p>
       </div>
     </footer>
   </div>
@@ -22,6 +22,11 @@ export default {
   name: 'App',
   data() {
     return {};
+  },
+  computed: {
+    currentYear() {
+      return new Date().getFullYear();
+    },
   },
 };
 </script>
