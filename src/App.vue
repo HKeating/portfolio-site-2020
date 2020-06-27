@@ -1,5 +1,5 @@
 <template>
-  <div id="app">
+  <div id="app" :class="{ 'theme-dark': $route.name === 'BTAB' }">
     <!-- <div id="nav">
       <router-link to="/">Home</router-link> |
       <router-link to="/about">About</router-link>
@@ -31,23 +31,22 @@ export default {
 };
 </script>
 
-<style lang="scss">
+<style lang="postcss">
 #app {
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: Oxygen-Regular, Helvetica, Arial, sans-serif;
+  background: rgb(249,249,249);
+  color: rgb(48,48,58);
+}
+#app.theme-dark {
+  background: rgb(48,48,58);
+  color: rgb(249,249,249);
 }
 
-#nav {
-  padding: 30px;
-
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-
-    &.router-link-exact-active {
-      color: #42b983;
-    }
-  }
+.bg-red-75 a,
+.bg-blue-75 a,
+.bg-red-50 a,
+.bg-blue-50 a {
+  @apply text-yellow-100;
 }
 
 .fade-enter-active,
