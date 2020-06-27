@@ -1,5 +1,5 @@
 <template>
-  <div id="app" :class="{ 'theme-dark': $route.name === 'BTAB' }">
+  <div id="app" :class="{ 'theme-dark': $route.name === 'BTAB', 'theme-light': $route.name !== 'BTAB' }" class="min-h-screen flex flex-col transition duration-300">
     <!-- <div id="nav">
       <router-link to="/">Home</router-link> |
       <router-link to="/about">About</router-link>
@@ -9,7 +9,7 @@
     <transition name="fade" mode="out-in">
       <router-view />
     </transition>
-    <footer class="container mx-auto p-2 xl:p-4">
+    <footer class="container mx-auto p-2 xl:p-4 mt-auto">
       <div class="border-t-2 border-r-2 p-2">
         <p class="text-right">Horace Keating {{ currentYear }}</p>
       </div>
@@ -41,7 +41,15 @@ export default {
   background: rgb(48,48,58);
   color: rgb(249,249,249);
 }
-
+a:hover {
+  @apply underline;
+}
+.theme-light a {
+  @apply text-blue-100;
+}
+.theme-dark a {
+  @apply text-yellow-100;
+}
 .bg-red-75 a,
 .bg-blue-75 a,
 .bg-red-50 a,
@@ -51,7 +59,7 @@ export default {
 
 .fade-enter-active,
 .fade-leave-active {
-  transition: opacity 200ms ease-in-out;
+  transition: opacity 300ms ease-in-out;
 }
 .fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
   opacity: 0;
