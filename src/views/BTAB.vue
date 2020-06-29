@@ -10,7 +10,7 @@
     </div>
     <div class="home-nav-link sticky m-2 col-start-1">
       <link-internal
-        class="p-2 border-t-2 border-l-2 border-black border-opacity-75"
+        class="p-2 border-t-2 border-l-2 border-black border-opacity-75 bg-gray-75"
         :routeName="'Home'"
         >Home</link-internal
       >
@@ -20,7 +20,7 @@
     >
       <img
         class="object-cover w-full h-full"
-        src="@/assets/images/btab-3.png"
+        src="@/assets/images/btab-3.jpg"
         alt="Britain, take a bow"
       />
     </div>
@@ -62,7 +62,7 @@
     >
       <img
         class="object-cover w-full h-full"
-        src="@/assets/images/btab-4.png"
+        src="@/assets/images/btab-4.jpg"
         alt="Britain, take a bow"
       />
     </div>
@@ -77,15 +77,15 @@
           <link-external :linkUrl="'https://vuejs.org/'">Vue.js</link-external>
         </li>
         <li>
-          <link-external :linkUrl="'https://www.npmjs.com/package/axios'"
-            >Axios</link-external
+          <link-external :linkUrl="'https://vuex.vuejs.org/'">Vuex</link-external>
+        </li>
+        <li>
+          <link-external :linkUrl="'https://www.npmjs.com/package/vue-resource'"
+            >Vue-resource</link-external
           >
         </li>
         <li>
           <link-external :linkUrl="'https://uppy.io/'">Uppy</link-external>
-        </li>
-        <li>
-          <p class="text-yellow-100">...</p>
         </li>
       </ul>
     </div>
