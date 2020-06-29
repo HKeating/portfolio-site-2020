@@ -66,7 +66,7 @@ a:hover {
 
 .fade-enter-active,
 .fade-leave-active {
-  transition: opacity 300ms ease-in-out;
+  transition: opacity 100ms ease-in-out;
 }
 .fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
   opacity: 0;
