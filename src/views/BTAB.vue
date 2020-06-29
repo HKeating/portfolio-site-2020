@@ -58,22 +58,16 @@
       >
     </div>
     <div
-      class="m-2 col-span-3 row-span-1 col-start-1 md:col-start-1 md:row-start-5 md:col-span-2 lg:col-start-2 lg:col-span-4 border-l-2 border-t-2 border-black border-opacity-75 p-2 transition-background duration-300 hover:bg-yellow-50"
+      class="m-2 col-span-3 row-span-1 col-start-1 md:col-start-1 md:row-start-5 md:col-span-2 lg:col-start-2 lg:col-span-4 border-l-2 border-t-2 border-black border-opacity-75 p-2"
     >
-      <a
-        href="https://britaintakeabow.org"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <img
-          class="object-cover w-full h-full"
-          src="@/assets/images/btab-1.png"
-          alt="Britain, take a bow"
-        />
-      </a>
+      <img
+        class="object-cover w-full h-full"
+        src="@/assets/images/btab-4.png"
+        alt="Britain, take a bow"
+      />
     </div>
     <div
-      class="m-2 p-2 border-b-2 border-r-2 border-black border-opacity-75 col-start-1 col-span-2 row-start-6 sm:col-start-1 md:col-start-3 md:col-span-2 lg:col-start-4 lg:col-span-4"
+      class="m-2 p-2 border-b-2 border-r-2 border-black border-opacity-75 col-start-1 col-span-2 row-start-6 sm:col-start-1 md:col-start-3 md:col-span-2 lg:col-start-4 lg:col-span-5"
     >
       <p class="text-base">
         The frontend of Britain, Take a Bow is built with:
