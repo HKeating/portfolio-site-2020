@@ -5,7 +5,7 @@
       'theme-dark': $route.name === 'BTAB',
       'theme-light': $route.name !== 'BTAB',
     }"
-    class="min-h-screen flex flex-col transition duration-300"
+    class="min-h-screen flex flex-col"
   >
     <!-- <div id="nav">
       <router-link to="/">Home</router-link> |
