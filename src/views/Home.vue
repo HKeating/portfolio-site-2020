@@ -50,17 +50,13 @@
     <div
       class="m-2 col-span-3 row-span-1 col-start-1 md:col-start-2 lg:col-start-1 lg:col-span-4 lg:row-span-2 border-l-2 border-t-2 border-black border-opacity-75 p-2 transition-background duration-300 hover:bg-blue-50"
     >
-      <a
-        href="https://britaintakeabow.org"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
+      <router-link :to="{ name: 'BTAB' }">
         <img
           class="object-cover w-full h-full"
           src="@/assets/images/btab-2.jpg"
           alt="Britain, take a bow"
         />
-      </a>
+      </router-link>
     </div>
     <div
       :class="elementBackgroundClasses[4]"
@@ -81,7 +77,7 @@
         <img
           class="object-cover w-full h-full"
           src="@/assets/images/ga-projects.jpg"
-          alt="Flappy sausage game"
+          alt="General Assembly projects"
         />
       </router-link>
     </div>
