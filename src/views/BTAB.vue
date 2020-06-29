@@ -77,7 +77,9 @@
           <link-external :linkUrl="'https://vuejs.org/'">Vue.js</link-external>
         </li>
         <li>
-          <link-external :linkUrl="'https://vuex.vuejs.org/'">Vuex</link-external>
+          <link-external :linkUrl="'https://vuex.vuejs.org/'"
+            >Vuex</link-external
+          >
         </li>
         <li>
           <link-external :linkUrl="'https://www.npmjs.com/package/vue-resource'"
