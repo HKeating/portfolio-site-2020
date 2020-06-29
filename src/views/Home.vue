@@ -48,7 +48,7 @@
       </p>
     </div>
     <div
-      class="m-2 col-span-3 row-span-1 col-start-1 md:col-start-2 lg:col-start-1 lg:col-span-4 border-l-2 border-t-2 border-black border-opacity-75 p-2 transition-background duration-300 hover:bg-blue-50"
+      class="m-2 col-span-3 row-span-1 col-start-1 md:col-start-2 lg:col-start-1 lg:col-span-4 lg:row-span-2 border-l-2 border-t-2 border-black border-opacity-75 p-2 transition-background duration-300 hover:bg-blue-50"
     >
       <a
         href="https://britaintakeabow.org"
@@ -57,7 +57,7 @@
       >
         <img
           class="object-cover w-full h-full"
-          src="@/assets/images/btab-2.png"
+          src="@/assets/images/btab-2.jpg"
           alt="Britain, take a bow"
         />
       </a>
@@ -65,52 +65,37 @@
     <div
       :class="elementBackgroundClasses[4]"
       @click="randomiseBackgroundClassByIndex(4)"
-      class="m-2 cursor-pointer lg:col-start-6 lg:col-span-4 lg:row-start-3 md:row-span-2 md:row-start-4 md:col-span-1 border-r-2 border-t-2 border-black border-opacity-75 p-2 transition-background duration-300"
+      class="m-2 cursor-pointer lg:col-start-6 lg:col-span-5 lg:row-start-3 md:row-span-1 md:row-start-4 md:col-span-1 border-r-2 border-t-2 border-black border-opacity-75 p-2 transition-background duration-300"
     >
       <p class="text-base">
         In 2018, alongside two colleagues, I built
         <link-internal :routeName="'BTAB'">Britain, Take A Bow</link-internal>,
         a generative digital art piece responding to the national debate about
-        Brexit. It allows users to upload video clips, which are then combined
-        with a database of audio samples and a typographic layer, to create a
-        unique film for each viewing.
+        Brexit.
       </p>
     </div>
     <div
-      class="m-2 col-span-2 col-start-1 sm:row-start-6 md:col-start-2 lg:row-start-5 lg:col-start-7 lg:col-span-5 lg:row-span-2 border-b-2 border-r-2 border-black border-opacity-75 p-2 lg:border-t-2 lg:border-l-2 lg:border-r-0 lg:border-b-0 transition-background duration-300 hover:bg-yellow-50"
+      class="m-2 col-span-2 col-start-1 sm:row-start-6 md:row-start-5 md:col-start-1 lg:row-start-5 lg:col-start-9 lg:col-span-3 lg:row-span-1 border-b-2 border-r-2 border-black border-opacity-75 p-2 lg:border-t-2 lg:border-l-2 lg:border-r-0 lg:border-b-0 transition-background duration-300 hover:bg-yellow-50"
     >
-      <a
-        target="_blank"
-        rel="noopener noreferrer"
-        href="https://flappy-sausage.herokuapp.com"
-      >
+      <router-link :to="{ name: 'GA' }">
         <img
           class="object-cover w-full h-full"
-          src="@/assets/images/flappy-sausage.png"
+          src="@/assets/images/ga-projects.jpg"
           alt="Flappy sausage game"
         />
-      </a>
+      </router-link>
     </div>
     <div
       :class="elementBackgroundClasses[6]"
       @click="randomiseBackgroundClassByIndex(6)"
-      class="m-2 cursor-pointer col-start-1 col-span-2 lg:row-start-5 lg:col-start-3 lg:col-span-4 lg:row-span-1 border-l-2 border-t-2 border-black border-opacity-75 p-2 lg:border-r-2 lg:border-b-2 lg:border-t-0 lg:border-l-0 transition-background duration-300"
+      class="m-2 cursor-pointer col-start-1 col-span-2 md:col-start-3 lg:row-start-5 lg:col-start-3 lg:col-span-5 lg:row-span-1 lg:row-span-2 border-l-2 border-t-2 border-black border-opacity-75 p-2 lg:border-r-2 lg:border-b-2 lg:border-t-0 lg:border-l-0 transition-background duration-300"
     >
       <p class="text-base">
         My fascination with technology, and the transformative effect of the
         internet on communication, media and the arts drove me to complete the
         Web Development Immersive course at
-        <link-external :linkUrl="'https://generalassemb.ly/'"
-          >General Assembly</link-external
-        >
+        <link-internal :routeName="'GA'">General Assembly</link-internal>
         after completing my degree in German.
-      </p>
-      <p class="text-base">
-        There I learned the fundamentals of software development, and after two
-        weeks built
-        <link-external :linkUrl="'https://flappy-sausage.herokuapp.com'"
-          >Flappy Sausage</link-external
-        >, a game similar to the popular Flappy Bird.
       </p>
     </div>
   </div>
