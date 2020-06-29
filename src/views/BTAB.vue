@@ -8,7 +8,7 @@
       <h1 class="text-3xl">Britain, Take A Bow!</h1>
       <h2 class="text-xl">A generative digital artwork</h2>
     </div>
-    <div class="m-2 col-start-1">
+    <div class="home-nav-link sticky m-2 col-start-1">
       <link-internal
         class="p-2 border-t-2 border-l-2 border-black border-opacity-75"
         :routeName="'Home'"
@@ -106,3 +106,9 @@ export default {
   },
 };
 </script>
+
+<style lang="postcss">
+.home-nav-link {
+  top: 16px;
+}
+</style>
