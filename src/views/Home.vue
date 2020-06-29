@@ -65,7 +65,7 @@
     <div
       :class="elementBackgroundClasses[4]"
       @click="randomiseBackgroundClassByIndex(4)"
-      class="m-2 cursor-pointer lg:col-start-6 lg:col-span-5 lg:row-start-3 md:row-span-1 md:row-start-4 md:col-span-1 border-r-2 border-t-2 border-black border-opacity-75 p-2 transition-background duration-300"
+      class="m-2 cursor-pointer col-span-2 lg:col-start-6 lg:col-span-5 lg:row-start-3 md:row-span-1 md:row-start-4 md:col-span-1 border-r-2 border-t-2 border-black border-opacity-75 p-2 transition-background duration-300"
     >
       <p class="text-base">
         In 2018, alongside two colleagues, I built
