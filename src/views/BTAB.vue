@@ -1,14 +1,14 @@
 <template>
   <div
-    class="btab container mx-auto grid gap-4 lg:grid-cols-12 grid-cols-2 md:grid-cols-4 p-2 xl:p-4"
+    class="btab container mx-auto grid lg:grid-cols-12 grid-cols-2 md:grid-cols-4 p-2 xl:p-4"
   >
     <div
-      class="lg:col-span-4 md:col-span-2 col-span-2 border-b-2 border-r-2 border-black border-opacity-75 p-2"
+      class="m-2 lg:col-span-4 md:col-span-2 col-span-2 border-b-2 border-r-2 border-black border-opacity-75 p-2"
     >
       <h1 class="text-3xl">Britain, Take A Bow!</h1>
       <h2 class="text-xl">A generative digital artwork</h2>
     </div>
-    <div class="col-start-1">
+    <div class="m-2 col-start-1">
       <link-internal
         class="p-2 border-t-2 border-l-2 border-black border-opacity-75"
         :routeName="'Home'"
@@ -16,7 +16,7 @@
       >
     </div>
     <div
-      class="col-span-1 row-span-1 col-start-2 row-start-2 md:col-start-3 md:row-start-2 md:col-span-2 md:row-span-2 lg:col-start-9 lg:col-span-4 border-r-2 border-b-2 border-black border-opacity-75 p-2"
+      class="m-2 col-span-1 row-span-1 col-start-2 row-start-2 md:col-start-3 md:row-start-2 md:col-span-2 md:row-span-2 lg:col-start-9 lg:col-span-4 border-r-2 border-b-2 border-black border-opacity-75 p-2"
     >
       <img
         class="object-cover w-full h-full"
@@ -25,7 +25,7 @@
       />
     </div>
     <div
-      class="p-2 border-b-2 border-l-2 border-black border-opacity-75 col-start-1 col-span-2 row-start-3 sm:col-start-1 md:col-start-1 md:col-span-2 lg:col-start-4 lg:col-span-5"
+      class="m-2 p-2 border-b-2 border-l-2 border-black border-opacity-75 col-start-1 col-span-2 row-start-3 sm:col-start-1 md:col-start-1 md:col-span-2 lg:col-start-4 lg:col-span-5"
     >
       <p class="text-base">
         Britain, Take A Bow is a multi-participatory, generative artwork
@@ -36,7 +36,7 @@
       </p>
     </div>
     <div
-      class="p-2 border-t-2 border-r-2 border-black border-opacity-75 col-start-1 col-span-2 row-start-4 sm:col-start-1 md:col-start-2 md:col-span-3 lg:col-start-4 lg:col-span-6"
+      class="m-2 p-2 border-t-2 border-r-2 border-black border-opacity-75 col-start-1 col-span-2 row-start-4 sm:col-start-1 md:col-start-2 md:col-span-3 lg:col-start-4 lg:col-span-6"
     >
       <p class="text-base">
         Users are able to upload video clips, which are then combined with a
@@ -58,7 +58,7 @@
       >
     </div>
     <div
-      class="col-span-3 row-span-1 col-start-1 md:col-start-1 md:row-start-5 md:col-span-2 lg:col-start-2 lg:col-span-4 border-l-2 border-t-2 border-black border-opacity-75 p-2 transition-background duration-300 hover:bg-yellow-50"
+      class="m-2 col-span-3 row-span-1 col-start-1 md:col-start-1 md:row-start-5 md:col-span-2 lg:col-start-2 lg:col-span-4 border-l-2 border-t-2 border-black border-opacity-75 p-2 transition-background duration-300 hover:bg-yellow-50"
     >
       <a
         href="https://britaintakeabow.org"
@@ -73,7 +73,7 @@
       </a>
     </div>
     <div
-      class="p-2 border-b-2 border-r-2 border-black border-opacity-75 col-start-1 col-span-2 row-start-6 sm:col-start-1 md:col-start-3 md:col-span-2 lg:col-start-4 lg:col-span-4"
+      class="m-2 p-2 border-b-2 border-r-2 border-black border-opacity-75 col-start-1 col-span-2 row-start-6 sm:col-start-1 md:col-start-3 md:col-span-2 lg:col-start-4 lg:col-span-4"
     >
       <p class="text-base">
         The frontend of Britain, Take a Bow is built with:
