@@ -11,6 +11,12 @@ const routes = [
     component: Home,
   },
   {
+    path: '/current-work',
+    name: 'CurrentWork',
+    component: () =>
+      import(/* webpackChunkName: "current" */ '../views/CurrentWork.vue'),
+  },
+  {
     path: '/btab',
     name: 'BTAB',
     component: () => import(/* webpackChunkName: "btab" */ '../views/BTAB.vue'),
