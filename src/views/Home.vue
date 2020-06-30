@@ -34,15 +34,9 @@
         <link-external :linkUrl="'https://tuimedia.com'">
           digital agency</link-external
         >. In that time I have built
-        <link-external
-          :linkUrl="
-            'https://www.paconsulting.com/insights/2018/leadership-essentials/'
-          "
-          >learning platforms</link-external
-        >, websites, native apps, and
-        <link-external :linkUrl="'https://pulsevisual.com/'"
-          >SaaS systems</link-external
-        >
+        <link-internal :routeName="'CurrentWork'">
+          learning platforms, websites, native apps, and SaaS systems
+        </link-internal>
         for multinational clients, and developed expertise in a wide range of
         web technologies.
       </p>
