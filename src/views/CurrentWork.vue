@@ -30,7 +30,7 @@
     >
       <h2 class="text-xl">Vue.js</h2>
       <p class="text-base">
-        I have developed a high level of expertise with Vue.js over the past
+        I have developed a high level of proficiency with Vue.js over the past
         three years and have led development on multiple Vue projects.
       </p>
     </div>
