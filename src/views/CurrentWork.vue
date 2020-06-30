@@ -17,7 +17,7 @@
       >
     </div>
     <div
-      class="m-2 col-span-2 row-span-1 col-start-1 row-start-4 sm:col-span-1 sm:col-start-2 sm:row-start-3 md:col-start-3 md:row-start-2 md:col-span-2 md:row-span-2 lg:col-start-8 lg:col-span-4 border-r-2 border-b-2 border-black border-opacity-75 p-2"
+      class="m-2 col-span-2 row-span-1 col-start-1 row-start-4 sm:col-span-1 sm:col-start-2 sm:row-start-3 md:col-start-3 md:row-start-2 md:col-span-2 md:row-span-2 lg:col-start-8 lg:col-span-4 border-r-2 border-t-2 border-black border-opacity-75 p-2"
     >
       <img
         class="object-cover w-full h-full"
@@ -26,7 +26,7 @@
       />
     </div>
     <div
-      class="m-2 p-2 border-b-2 border-l-2 border-black border-opacity-75 col-start-1 col-span-2 row-start-3 sm:col-span-1 md:col-start-1 md:col-span-2 lg:col-start-3 lg:col-span-5"
+      class="m-2 p-2 border-t-2 border-l-2 border-black border-opacity-75 col-start-1 col-span-2 row-start-3 sm:col-span-1 md:col-start-1 md:col-span-2 lg:col-start-3 lg:col-span-5"
     >
       <h2 class="text-xl">Vue.js</h2>
       <p class="text-base">
@@ -35,7 +35,7 @@
       </p>
     </div>
     <div
-      class="m-2 p-2 border-t-2 border-l-2 border-black border-opacity-75 col-start-1 col-span-2 row-start-6 sm:col-span-1 sm:col-start-1 sm:row-start-5 md:col-start-1 md:col-span-2 lg:col-start-10 lg:col-span-3 lg:row-start-4 xl:col-start-10 xl:col-span-2"
+      class="m-2 p-2 border-b-2 border-r-2 border-black border-opacity-75 col-start-1 col-span-2 row-start-6 sm:col-span-1 sm:col-start-1 sm:row-start-5 md:col-start-1 md:col-span-2 lg:col-start-10 lg:col-span-3 lg:row-start-4 xl:col-start-10 xl:col-span-2"
     >
       <p class="text-base">
         I am experienced with a variety tools from around the Vue ecosystem
@@ -43,13 +43,13 @@
       </p>
       <ul class="">
         <li>
-          <link-external :linkUrl="'https://nuxtjs.org/'"
-            >Nuxt.js</link-external
+          <link-external :linkUrl="'https://vuex.vuejs.org/'"
+            >Vuex</link-external
           >
         </li>
         <li>
-          <link-external :linkUrl="'https://vuex.vuejs.org/'"
-            >Vuex</link-external
+          <link-external :linkUrl="'https://nuxtjs.org/'"
+            >Nuxt.js</link-external
           >
         </li>
         <li>
@@ -70,7 +70,7 @@
       </ul>
     </div>
     <div
-      class="m-2 p-2 border-t-2 border-r-2 border-black border-opacity-75 col-start-1 col-span-2 row-start-5 sm:col-start-1 sm:row-start-4 md:col-start-1 md:col-span-4 lg:col-start-3 lg:col-span-7 lg:row-start-4"
+      class="m-2 p-2 border-b-2 border-l-2 border-black border-opacity-75 col-start-1 col-span-2 row-start-5 sm:col-start-1 sm:row-start-4 md:col-start-1 md:col-span-4 lg:col-start-3 lg:col-span-7 lg:row-start-4"
     >
       <h2 class="text-lg">Learning platform</h2>
       <p class="text-base mb-2">
