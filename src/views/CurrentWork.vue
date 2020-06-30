@@ -35,7 +35,7 @@
       </p>
     </div>
     <div
-      class="m-2 p-2 border-t-2 border-l-2 border-black border-opacity-75 col-start-1 col-span-2 row-start-6 sm:col-span-1 sm:col-start-2 md:col-start-1 md:col-span-2 md:row-start-5 lg:col-start-10 lg:col-span-3 lg:row-start-4"
+      class="m-2 p-2 border-t-2 border-l-2 border-black border-opacity-75 col-start-1 col-span-2 row-start-6 sm:col-span-1 sm:col-start-1 sm:row-start-5 md:col-start-1 md:col-span-2 lg:col-start-10 lg:col-span-3 lg:row-start-4 xl:col-start-10 xl:col-span-2"
     >
       <p class="text-base">
         I am experienced with a variety tools from around the Vue ecosystem
@@ -70,7 +70,7 @@
       </ul>
     </div>
     <div
-      class="m-2 p-2 border-t-2 border-r-2 border-black border-opacity-75 col-start-1 col-span-2 row-start-5 sm:col-start-1 md:col-start-1 md:col-span-4  md:row-start-4 lg:col-start-3 lg:col-span-7 lg:row-start-4"
+      class="m-2 p-2 border-t-2 border-r-2 border-black border-opacity-75 col-start-1 col-span-2 row-start-5 sm:col-start-1 sm:row-start-4 md:col-start-1 md:col-span-4 lg:col-start-3 lg:col-span-7 lg:row-start-4"
     >
       <h2 class="text-lg">Learning platform</h2>
       <p class="text-base mb-2">
@@ -103,7 +103,7 @@
       </p> -->
     </div>
     <div
-      class="m-2 p-2 border-t-2 border-r-2 border-black border-opacity-75 col-start-1 col-span-2 row-start-7 sm:col-start-1 md:col-start-2 md:col-span-3 md:row-start-6 lg:row-start-5 lg:col-start-4 lg:col-span-6"
+      class="m-2 p-2 border-t-2 border-r-2 border-black border-opacity-75 col-start-1 col-span-2 sm:row-start-6 sm:col-start-1 md:col-start-2 md:col-span-3 md:row-start-6 lg:row-start-5 lg:col-start-4 lg:col-span-6"
     >
       <h2 class="text-xl">Native App Development</h2>
       <p class="text-base">
@@ -128,6 +128,11 @@
       <p class="text-base">
         I used NativeScript-Vue to build the front-end app for an onboarding
         chatbot for Rolls-Royce.
+      </p>
+      <p class="text-base">
+        I also built a proof-of-concept DialogFlow agent to handle the bot's
+        natural language processing and worked with my team to expand its
+        capabilities for release.
       </p>
     </div>
     <div
