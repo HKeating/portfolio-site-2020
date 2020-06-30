@@ -136,7 +136,7 @@
       </p>
     </div>
     <div
-      class="m-2 col-span-1 row-span-2 col-start-2 md:col-start-1 md:col-span-1 md:row-start-6 lg:row-start-5 lg:col-start-2 lg:col-span-2 border-l-2 border-t-2 border-black border-opacity-75 p-2"
+      class="m-2 col-span-1 row-span-2 col-start-2 md:col-start-1 md:col-span-1 md:row-start-6 lg:row-start-5 lg:col-start-1 lg:col-span-3 xl:col-start-2 xl:col-span-2 border-l-2 border-t-2 border-black border-opacity-75 p-2"
     >
       <img
         class="object-cover w-full h-full"
@@ -234,7 +234,7 @@
 import LinkInternal from '@/components/LinkInternal';
 import LinkExternal from '@/components/LinkExternal';
 export default {
-  name: 'Current Work',
+  name: 'CurrentWork',
   data() {
     return {};
   },
