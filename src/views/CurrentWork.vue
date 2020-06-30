@@ -134,7 +134,7 @@
       />
     </div>
     <div
-      class="m-2 p-2 border-t-2 border-l-2 border-black border-opacity-75 col-start-1 col-span-2 sm:col-start-1 md:col-start-2 md:col-span-3 lg:col-start-3 lg:col-span-6"
+      class="m-2 p-2 border-t-2 border-l-2 border-black border-opacity-75 col-start-1 col-span-2 sm:col-start-1 md:col-start-2 md:col-span-3 lg:col-start-4 lg:col-span-7"
     >
       <h2 class="text-xl">SaaS Succession Planning</h2>
       <p class="text-base">
@@ -146,7 +146,7 @@
       </p>
     </div>
     <div
-      class="m-2 p-2 border-b-2 border-l-2 md:border-t-2 md:border-b-0 border-black border-opacity-75 col-start-1 col-span-2 md:col-start-1 md:col-span-2 md:row-span-1 lg:col-start-3 lg:col-span-6"
+      class="m-2 p-2 border-b-2 border-l-2 md:border-t-2 md:border-b-0 border-black border-opacity-75 col-start-1 col-span-2 md:col-start-1 md:col-span-2 md:row-span-1 lg:col-start-4 lg:col-span-5"
     >
       <h2 class="text-lg">Highly Configurable</h2>
       <p class="text-base">
@@ -161,12 +161,12 @@
     >
       <img
         class="object-cover w-full h-full"
-        src="@/assets/images/feel-good.jpg"
+        src="@/assets/images/pv-insights.png"
         alt="Pulse Visual app"
       />
     </div>
     <div
-      class="m-2 p-2 border-b-2 border-r-2 border-black border-opacity-75 col-start-1 col-span-2 md:col-start-1 md:col-span-4 lg:col-start-3 lg:col-span-8"
+      class="m-2 p-2 border-b-2 border-r-2 border-black border-opacity-75 col-start-1 col-span-2 md:col-start-1 md:col-span-4 lg:col-start-4 lg:col-span-7"
     >
       <h2 class="text-lg">Deployment and Distribution</h2>
       <p class="text-base">
