@@ -65,7 +65,7 @@
       </p>
     </div>
     <div
-      class="m-2 col-span-2 col-start-1 sm:row-start-6 md:row-start-5 md:col-start-1 lg:row-start-5 lg:col-start-9 lg:col-span-3 lg:row-span-1 border-b-2 border-r-2 border-black border-opacity-75 p-2 lg:border-t-2 lg:border-l-2 lg:border-r-0 lg:border-b-0 transition-background duration-300 hover:bg-yellow-50"
+      class="m-2 col-span-2 col-start-1 sm:row-start-6 md:row-start-5 md:col-start-1 lg:row-start-5 lg:col-start-9 lg:col-span-3 lg:row-span-1 border-t-2 border-r-2 md:border-t-0 md:border-b-2 border-black border-opacity-75 p-2 lg:border-t-2 lg:border-l-2 lg:border-r-0 lg:border-b-0 transition-background duration-300 hover:bg-yellow-50"
     >
       <router-link :to="{ name: 'GA' }">
         <img
@@ -78,7 +78,7 @@
     <div
       :class="elementBackgroundClasses[6]"
       @click="randomiseBackgroundClassByIndex(6)"
-      class="m-2 cursor-pointer col-start-1 col-span-2 md:col-start-3 lg:row-start-5 lg:col-start-3 lg:col-span-5 lg:row-span-1 lg:row-span-2 border-l-2 border-t-2 border-black border-opacity-75 p-2 lg:border-r-2 lg:border-b-2 lg:border-t-0 lg:border-l-0 transition-background duration-300"
+      class="m-2 cursor-pointer col-start-1 col-span-2 md:col-start-3 lg:row-start-5 lg:col-start-3 lg:col-span-5 lg:row-span-1 border-l-2 border-b-2 md:border-b-0 md:border-t-2 border-black border-opacity-75 p-2 lg:border-r-2 lg:border-b-2 lg:border-t-0 lg:border-l-0 transition-background duration-300"
     >
       <p class="text-base">
         My fascination with technology, and the transformative effect of the
@@ -87,6 +87,43 @@
         <link-internal :routeName="'GA'">General Assembly</link-internal>
         after completing my degree in German.
       </p>
+    </div>
+    <div
+      class="m-2 cursor-pointer col-start-1 col-span-2 md:col-start-2 lg:row-start-6 lg:col-start-7 lg:col-span-4 border-l-2 border-t-2 border-black border-opacity-75 p-2 bg-gray-50 transition-background duration-300"
+    >
+      <h2 class="text-lg text-white-100">
+        Get in touch:
+      </h2>
+      <div class="flex justify-between py-2">
+        <a href="mailto:hkeatingcontact@gmail.com?subject=Website%20Contact"
+          ><img
+            class="w-20 md:w-12 contact-link"
+            src="@/assets/images/email-icon.png"
+            alt="Email Contact"
+        /></a>
+
+        <link-external
+          :linkUrl="'https://www.linkedin.com/in/horace-keating-6599b513b/'"
+          ><img
+            class="w-20 md:w-12 contact-link"
+            src="@/assets/images/linkedin.png"
+            alt="My LinkedIn profile"
+        /></link-external>
+
+        <link-external :linkUrl="'https://github.com/HKeating'"
+          ><img
+            class="w-20 md:w-12 contact-link"
+            src="@/assets/images/github-logo.png"
+            alt="My GitHub profile"
+        /></link-external>
+
+        <link-external :linkUrl="'https://twitter.com/HoraceKeating'"
+          ><img
+            class="w-20 md:w-12 contact-link"
+            src="@/assets/images/twitter.png"
+            alt="My Twitter account"
+        /></link-external>
+      </div>
     </div>
   </div>
 </template>
@@ -99,7 +136,7 @@ export default {
   name: 'Home',
   data() {
     return {
-      elementBackgroundClasses: Array(7).fill(''),
+      elementBackgroundClasses: Array(8).fill(''),
       backgroundClasses: [
         '',
         'bg-blue-25',
@@ -136,4 +173,11 @@ export default {
 };
 </script>
 
-<style lang="postcss"></style>
+<style lang="postcss">
+.contact-link {
+  transition: transform 300ms ease-in-out;
+}
+.contact-link:hover {
+  transform: translateY(-4px) scale(1.05);
+}
+</style>
