@@ -18,7 +18,7 @@
     </transition>
     <footer class="container mx-auto p-2 xl:p-4 mt-auto">
       <div class="border-t-2 border-r-2 p-2 m-2">
-        <p class="text-right">Horace Keating {{ currentYear }}</p>
+        <p class="text-right text-base">Horace Keating {{ currentYear }}</p>
       </div>
     </footer>
   </div>
