@@ -1,6 +1,6 @@
 <template>
   <div
-    class="container mx-auto grid lg:grid-cols-12 sm:grid-cols-2 md:grid-cols-4 p-2 xl:p-4"
+    class="container mx-auto grid lg:grid-cols-12 grid-cols-2 md:grid-cols-4 p-2 xl:p-4"
   >
     <div
       :class="elementBackgroundClasses[0]"
@@ -13,7 +13,7 @@
     <div
       :class="elementBackgroundClasses[1]"
       @click="randomiseBackgroundClassByIndex(1)"
-      class="m-2 cursor-pointer row-span-1 col-start-1 md:row-span-2 md:col-start-4 md:col-span-1 lg:col-span-2 lg:col-start-11 border-l-2 border-t-2 border-black border-opacity-75 p-2 transition-background duration-300"
+      class="m-2 cursor-pointer row-span-1 col-start-1 col-span-1 md:row-span-2 md:col-start-4 md:col-span-1 lg:col-span-2 lg:col-start-11 border-l-2 border-t-2 border-black border-opacity-75 p-2 transition-background duration-300"
     >
       <img
         class="object-cover w-full h-full"
@@ -24,7 +24,7 @@
     <div
       :class="elementBackgroundClasses[2]"
       @click="randomiseBackgroundClassByIndex(2)"
-      class="m-2 cursor-pointer lg:col-start-3 lg:col-span-6 md:col-span-4 md:col-start-1 border-l-2 border-b-2 border-black border-opacity-75 p-2 transition-background duration-300"
+      class="m-2 cursor-pointer col-span-1 col-start-2 lg:col-start-3 lg:col-span-6 md:col-span-4 md:col-start-1 border-l-2 border-b-2 border-black border-opacity-75 p-2 transition-background duration-300"
     >
       <p class="text-base">
         Hi, I am a web developer specialising in JavaScript and
